@@ -75,8 +75,12 @@ body {
 	margin-bottom: 20px;
 	width: 500px;
 }
-
-
+.hidden {
+	display: none;
+}
+.current {
+	display: block;
+}
 
 
 
