@@ -63,11 +63,18 @@ table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
 /* CUSTOMER STYLES START HERE */
+body {
+	font-family: 'Exo', sans-serif;
+}
 #wrapper {
 	margin: 0 auto;
 	width: 1000px;
 }
-
+#gallery-window {
+	height: 250px;
+	margin-bottom: 20px;
+	width: 500px;
+}
 
 
 
