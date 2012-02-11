@@ -79,9 +79,12 @@ body {
 	display: none;
 }
 .current {
+	border: solid 10px black;
 	display: block;
 }
-
+#thumbnail-nav img {
+	cursor: pointer;
+}
 
 
 
