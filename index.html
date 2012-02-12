@@ -16,17 +16,15 @@
 	  <header>
 		<h1>Adam's jQuery Image Gallery</h1>
 	  </header>
-  <div  id="wrapper">
-
-	  
-	  <div role="main">
-	  	<h2 id="gallery-name">Gallery Name</h2>
-		 <div id="gallery-window">
+  <div  id="wrapper">	  
+	  <div id="gallery">
+	  	 <h2 class="gallery-name">Gallery Name</h2>
+		 <div class="gallery-window">
 		 	<img id="slide1" class="current" src="img/cgi.jpg" alt="slide" />
 		 	<img id="slide2" class="hidden" src="img/football.jpg" alt="slide"/>
 		 	<img id="slide3" class="hidden" src="img/nike.jpg" alt="slide"/>
 		 </div>
-		 <div id="thumbnail-nav">
+		 <div class="thumbnail-nav">
 		 	<img id="thumb1" class="current-thumb" src="img/cgi.jpg" alt="thumb" />
 		 	<img id="thumb2" class="nonactive-thumb" src="img/football.jpg" alt="thumb" />
 		 	<img id="thumb3" class="nonactive-thumb" src="img/nike.jpg" alt="thumb" />
@@ -40,16 +38,12 @@
 	  	
 	  </ul>
 	  <div id="select-wrap">
-	  	<select>
-	  		<option>Gallery 1</option>
-	  		<option>Gallery 2</option>
-	  		<option>Gallery 3</option>
+	  	<select class="sparkbox-custom">
+	  		<option value="gallery1" >Gallery 1</option>
+	  		<option value="gallery2" >Gallery 2</option>
 	  	</select>
+
 	  </div>
-	  
-	  <footer>
-	
-	  </footer>
   </div>
 
   <div id="signature">
@@ -58,6 +52,14 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <script src="js/script.js"></script>
+  <script src="js/plugins.js"></script>
+  <script>
+  $(document).ready(function() {
+	  $('.sparkbox-custom').sbCustomSelect({
+	    appendTo: 'body'
+	  });
+  });
+  </script>
 
 </body>
 </html>
