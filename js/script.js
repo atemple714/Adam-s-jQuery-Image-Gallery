@@ -6,27 +6,25 @@
 	* make the code work with divs instead of imgs so we can have different content types
 	* make the code more modular like tabs.js in skeleton framework (one function use $(this))
 	* add drop down with customized ui widget that changes the "set" or "group" of the gallery
-	
-	
 */
 $(document).ready(function(){
 	$('#thumb1').click(function(event){
 		$('#gallery-window img').addClass('hidden');
-		$('#thumbnail-nav img').removeClass('current-thumb');	
+		$('#thumbnail-nav img').removeClass('current-thumb').addClass('nonactive-thumb');	
 		$('#slide1').removeAttr('style').animate({opacity: 'toggle'}, 700 ).removeClass('hidden').addClass('current');
-		$(this).addClass('current-thumb'); 
+		$(this).addClass('current-thumb').removeClass('nonactive-thumb'); 
 	});
 	$('#thumb2').click(function(event){
 		$('#gallery-window img').addClass('hidden');
-		$('#thumbnail-nav img').removeClass('current-thumb');	
+		$('#thumbnail-nav img').removeClass('current-thumb').addClass('nonactive-thumb');	
 		$('#slide2').removeAttr('style').animate({opacity: 'toggle'}, 700 ).removeClass('hidden').addClass('current');
-		$(this).addClass('current-thumb');
+		$(this).addClass('current-thumb').removeClass('nonactive-thumb'); 
 	});
 	$('#thumb3').click(function(event){
 		$('#gallery-window img').addClass('hidden');
-		$('#thumbnail-nav img').removeClass('current-thumb');	
+		$('#thumbnail-nav img').removeClass('current-thumb').addClass('nonactive-thumb');		
 		$('#slide3').removeAttr('style').animate({opacity: 'toggle'}, 700 ).removeClass('hidden').addClass('current');
-		$(this).addClass('current-thumb');
+		$(this).addClass('current-thumb').removeClass('nonactive-thumb'); 
 	});
 });
 
