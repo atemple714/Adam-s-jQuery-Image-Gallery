@@ -103,9 +103,9 @@ header {
 header h1 {
 	color: #777;
 	font-weight: normal;
-	letter-spacing: -1px;
+
 	display: inline; 
-	font-size: 24px;
+	font-size: 14px;
 	text-align: center;
 	padding-top: 8px;
 
@@ -225,7 +225,26 @@ header h1 {
 	font-size: 8px;
 }
 /*custom select box styles */
-sb-custom {
+#select-wrap {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0px 0px 6px 2px #b6b6b6;
+		-moz-box-shadow: inset 0px 0px 6px 2px #b6b6b6;
+		box-shadow: inset 0px 0px 6px 2px #b6b6b6;
+			background: #f6f8f9; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZjhmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2U1ZWJlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2Q3ZGVlMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNWY3ZjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+	background: linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-8 */
+}
+
+.sb-custom {
   cursor: pointer;
   display: inline;
   position: relative;
@@ -244,19 +263,25 @@ sb-custom {
           box-shadow: 0 0 4px 2px #79aed7;
 }
 .sb-select {
-	  background: #b6b6b6 url('../img/select-arrow.jpg') no-repeat 100% 50%;
-	  border: solid 1px #888;
-	  -webkit-border-radius: 6px;
-	  -moz-border-radius: 6px;
-	  border-radius: 6px;
+	  background-color: transparent;
+	  background-image: url(../img/down-arrow.png);
+	  background-position: 104px 13px;
+	  background-repeat: no-repeat;
+	  border: solid 1px #b6b6b6;
+	  cursor: pointer;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	  color: #888;
 	  font-size: 14px;
 	  left: 0;
-	  padding: 5px 30px 5px 5px;
+	  padding: 5px 33px 5px 5px;
 	  position: relative;
 	  text-decoration: none;
 	  top: 0;
 	  width: 100px;
 	  z-index: 1;
+
 }
 .sb-dropdown {
 	  background: white;
@@ -264,26 +289,31 @@ sb-custom {
 	  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
 	  box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
 	  display: none;
-	  font-size: .9em;
-	  left: 5px;
+	  left: -43px;
 	  list-style: none;
 	  margin: 0;
-	  padding: 5px;
+	  padding: 4px;
 	  position: absolute;
-	  top: 1.35em;
-	  width: 100px;
+	  top: 4px;
+	  opacity: 0.88;
+	  width: 94px;
 	  z-index: 2;
 }
 .sb-dropdown a {
-	  color: #444;
+	  color: #666;
 	  display: block;
+	  font-size: 13px;
 	  padding: 3px;
 	  text-decoration: none;
 }
-.sb-dropdown a:hover,
-.sb-dropdown .selected {
-	  background: #b6b6b6;
+.sb-dropdown a:hover {
+	  background: #ccc;
 }
+.sb-dropdown .selected {
+	  background: #d7d7d7;
+}
+
+
 @media only screen and (min-width: 35em) {
   
 

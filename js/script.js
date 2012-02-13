@@ -45,6 +45,9 @@ $(document).ready(function(){
 	$('.sb-dropdown li[data-value="gallery2"] a').live("click", function(event){
 		$('#gallery').load('gallery-ajax/gallery2.html');
 	});
+	$('.sb-dropdown li[data-value="gallery3"] a').live("click", function(event){
+		$('#gallery').load('gallery-ajax/gallery2.html');
+	});
 
 });
 
