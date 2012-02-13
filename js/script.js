@@ -7,8 +7,10 @@
 	* Refactor: Make the code more modular like tabs.js in skeleton framework (one function use $(this))
 */
 $(document).ready(function(){
-	/* thumnbail and gallery code */
-	
+/* ----------------------THUMBNAIL&GALLERY CODE------------------------ */
+	/*we use the .live function to select whats in the dom instead of the document since the
+	 * gallerys are loaded via ajax .load
+	 */
 	$('#thumb1').live("click", function(event){
 		/*select all imgs in the gallery window and hide them*/
 		$('.gallery-window img').addClass('hidden');
@@ -35,6 +37,8 @@ $(document).ready(function(){
 		$(this).addClass('current-thumb').removeClass('nonactive-thumb'); 
 	});
 	
+/* ------------------------DROPDOWN MENU CODE--------------------------*/
+
 	$('.sb-dropdown li[data-value="gallery1"] a').live("click", function(event){
 		$('#gallery').load('gallery-ajax/gallery1.html');
 	});

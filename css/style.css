@@ -244,45 +244,45 @@ sb-custom {
           box-shadow: 0 0 4px 2px #79aed7;
 }
 .sb-select {
-  background: #b6b6b6 url('../img/select-arrow.jpg') no-repeat 100% 50%;
-  border: solid 1px #888;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
-font-size: 14px;
-  left: 0;
-  padding: 5px 30px 5px 5px;
-  position: relative;
-  text-decoration: none;
-  top: 0;
-  width: 100px;
-  z-index: 1;
+	  background: #b6b6b6 url('../img/select-arrow.jpg') no-repeat 100% 50%;
+	  border: solid 1px #888;
+	  -webkit-border-radius: 6px;
+	  -moz-border-radius: 6px;
+	  border-radius: 6px;
+	  font-size: 14px;
+	  left: 0;
+	  padding: 5px 30px 5px 5px;
+	  position: relative;
+	  text-decoration: none;
+	  top: 0;
+	  width: 100px;
+	  z-index: 1;
 }
 .sb-dropdown {
-  background: white;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
-     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
-          box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
-  display: none;
-  font-size: .9em;
-  left: 5px;
-  list-style: none;
-  margin: 0;
-  padding: 5px;
-  position: absolute;
-  top: 1.35em;
-  width: 100px;
-  z-index: 2;
+	  background: white;
+	  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
+	  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
+	  box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
+	  display: none;
+	  font-size: .9em;
+	  left: 5px;
+	  list-style: none;
+	  margin: 0;
+	  padding: 5px;
+	  position: absolute;
+	  top: 1.35em;
+	  width: 100px;
+	  z-index: 2;
 }
 .sb-dropdown a {
-  color: #444;
-  display: block;
-  padding: 3px;
-  text-decoration: none;
+	  color: #444;
+	  display: block;
+	  padding: 3px;
+	  text-decoration: none;
 }
 .sb-dropdown a:hover,
 .sb-dropdown .selected {
-  background: #b6b6b6;
+	  background: #b6b6b6;
 }
 @media only screen and (min-width: 35em) {
   
